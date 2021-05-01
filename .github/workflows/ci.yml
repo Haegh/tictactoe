@@ -1,0 +1,12 @@
+name: Tic tac toe CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  test:
+    name: Global tests
+    runs-on: ubuntu-20.04
+    steps:
+      - run: cargo test
