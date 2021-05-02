@@ -7,6 +7,8 @@ on:
 jobs:
   test:
     name: Global tests
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
-      - run: cargo test
+      - uses: actions/checkout@v2
+      - name: test tic tac toe
+        run: cargo test
