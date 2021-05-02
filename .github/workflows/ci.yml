@@ -1,4 +1,4 @@
-name: Tic tac toe CI
+name: CI
 
 on:
   push:
